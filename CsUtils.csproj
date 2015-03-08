@@ -39,6 +39,7 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="CsUtils\Core\Assert.cs" />
     <Compile Include="CsUtils\Core\Serialization.cs" />
+    <Compile Include="CsUtils\Core\Compare.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
