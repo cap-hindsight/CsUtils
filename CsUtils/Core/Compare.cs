@@ -54,5 +54,27 @@ namespace CsUtils.Core {
         public static CmpRes StdCmp<T>(T a, T b) where T: IComparable<T> {
             return (CmpRes) a.CompareTo(b);
         }
+
+        /// <summary>Evaluate the minimum of arguments.</summary>
+        public static T Min<T>(CmpF<T> cmpF, params T[] args) {
+            Assert.Validate(args.Length > 0, "Min must have at least one arg");
+            T min = args[0];
+            for (int i = 1; i < args.Length; i++) {
+                if (cmpF(args[i], min) == CmpRes.LT)
+                    min = args[i];
+            }
+            return min;
+        }
+
+        /// <summary>Evaluate the maximum of arguments.</summary>
+        public static T Max<T>(CmpF<T> cmpF, params T[] args) {
+            Assert.Validate(args.Length > 0, "Min must have at least one arg");
+            T max = args[0];
+            for (int i = 1; i < args.Length; i++) {
+                if (cmpF(args[i], max) == CmpRes.GT)
+                    max = args[i];
+            }
+            return max;
+        }
     }
 }
