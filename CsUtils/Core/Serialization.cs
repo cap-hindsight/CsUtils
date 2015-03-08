@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace CsUtils {
+namespace CsUtils.Core {
     /// <summary>Static class containing serialization extension methods.</summary>
     public static class Serialization {
         private static readonly BinaryFormatter formatter = new BinaryFormatter();

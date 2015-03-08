@@ -37,11 +37,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="CsUtils\Assert.cs" />
-    <Compile Include="CsUtils\Serialization.cs" />
+    <Compile Include="CsUtils\Core\Assert.cs" />
+    <Compile Include="CsUtils\Core\Serialization.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="CsUtils\" />
+    <Folder Include="CsUtils\Core\" />
   </ItemGroup>
 </Project>

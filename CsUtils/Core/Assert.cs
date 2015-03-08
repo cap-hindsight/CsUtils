@@ -1,6 +1,6 @@
 using System;
 
-namespace CsUtils {
+namespace CsUtils.Core {
     /// <summary>Static class containing assertion utilities.</summary>
     /// <remarks>Define the DISABLE_ASSERTIONS compiler symbol in order to disable all assertions.</remarks>
     public static class Assert {
