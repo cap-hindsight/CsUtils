@@ -40,10 +40,14 @@
     <Compile Include="CsUtils\Core\Assert.cs" />
     <Compile Include="CsUtils\Core\Serialization.cs" />
     <Compile Include="CsUtils\Core\Compare.cs" />
+    <Compile Include="CsUtils\DataStructs\Rmq.cs" />
+    <Compile Include="CsUtils\DataStructs\IDataStruct.cs" />
+    <Compile Include="CsUtils\Core\Accumulate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="CsUtils\" />
     <Folder Include="CsUtils\Core\" />
+    <Folder Include="CsUtils\DataStructs\" />
   </ItemGroup>
 </Project>
